@@ -31,9 +31,9 @@ const QuoteBox = () => {
          setBodyColor(document.body.style.background = randomColor)
     };
     
-    let randomColor = getRandomColor()
+    let randomColor = getRandomColor();
     
-    document.body.style.background = color
+    document.body.style.background = color;
     
     return(
             
