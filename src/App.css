@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: black;
+  font-family: 'Merriweather', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: min-content;
+  height: min-content;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+  display: inline-block;
+}
+
+.card .quote {
+  margin-left: 80px;
+  margin-top: 50px;
+  font-size: 25px;
+  margin-right: 40px;
+}
+
+.card .author {
+  font-size: 20px;
+  margin-left: 500px;
+  margin-top: 20px;
+  margin-right: 40px;
+  white-space: nowrap;
+}
+
+.card .btn {
+  font-size: 30px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  left: 45%;
   color: white;
+  cursor: pointer;
+  border: solid 1px transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.unselectable { 
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.fa-quote-left {
+font-size: 80px;
+margin-left: 20px;
+padding-top: 20px;
+margin-bottom: -50px;
+}
+
+img {
+  width: 60px;
+  margin-left: 20px;
+  margin-top: 50px;
 }
